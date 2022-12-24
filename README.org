@@ -1,0 +1,12 @@
+* 9cc
+** How to use
+
+build:
+#+begin_src shell
+  docker build -t 9cc .
+#+end_src
+
+test:
+#+begin_src shell
+  docker run --rm -v $(PWD)/src:/root/9cc -it 9cc make test
+#+end_src
